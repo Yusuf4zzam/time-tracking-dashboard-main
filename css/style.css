@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100vh;
+  padding: 30px 0;
+  background: #0f1424;
+}
+
+.container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.aside .info {
+  position: relative;
+  z-index: 9999;
+  background-color: #5847eb;
+  padding: 20px;
+  min-height: 300px;
+  border-radius: 10px;
+}
+
+.aside .info .image-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  margin-bottom: 30px;
+}
+
+.aside .info .image-box img {
+  width: 60px;
+}
+
+.aside .info .text-box p {
+  font-size: 14px;
+  color: #bdc1ff;
+  margin-bottom: 7px;
+}
+
+.aside .info .text-box h2 {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 300;
+}
+
+.aside .nav {
+  padding: 25px;
+  background-color: #1c1f4a;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 -20px 0 #1c1f4a;
+          box-shadow: 0 -20px 0 #1c1f4a;
+}
+
+.aside .nav ul {
+  list-style: none;
+}
+
+.aside .nav ul li {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #6f76c8;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.aside .nav ul li:not(:last-of-type) {
+  margin-bottom: 15px;
+}
+
+.aside .nav ul li:hover, .aside .nav ul li.active {
+  color: #fff;
+}
+
+.content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(250px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 30px;
+  width: 70%;
+}
+
+.content .box .background {
+  position: relative;
+  z-index: 2;
+  padding: 0 10px;
+  text-align: right;
+  height: 50px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.content .box .background svg {
+  position: absolute;
+  right: 15px;
+  top: -7px;
+}
+
+.content .box .content-container {
+  position: relative;
+  z-index: 10;
+  border-radius: 10px;
+  padding: 20px;
+  background: #1c1f4a;
+}
+
+.content .box .head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+  color: #fff;
+  font-size: 16px;
+}
+
+.content .box .head h4 {
+  font-weight: 400;
+}
+
+.content .box .head .icon-holder {
+  padding: 3  px;
+  cursor: pointer;
+}
+
+.content .box .content-data h3 {
+  font-size: 40px;
+  font-weight: 300;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.content .box .content-data p {
+  color: #6f76c8;
+  font-size: 14px;
+}
+
+@media (max-width: 767px) {
+  .container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .content,
+  .aside {
+    width: 100% !important;
+  }
+  .info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    min-height: unset !important;
+  }
+  .info .image-box {
+    margin: 0 !important;
+  }
+  .info .text-box {
+    margin-left: 15px;
+  }
+  .info h2 {
+    font-size: 20px !important;
+  }
+  .nav {
+    padding: 25px !important;
+  }
+  .nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .nav ul li:not(:last-of-type) {
+    margin: 0 !important;
+  }
+  .box:first-of-type {
+    grid-row: unset !important;
+  }
+}
+/*# sourceMappingURL=style.css.map */
